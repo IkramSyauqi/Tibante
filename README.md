@@ -1,4 +1,3 @@
-# Tibante Test
-aisudyiausydiaysduasdasd
+Project Capstone SIB Dicoding Cycle 6
 
-tes
+On Progress
