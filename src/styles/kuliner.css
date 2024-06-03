@@ -22,14 +22,14 @@ header {
 
 nav {
     display: flex;
-    gap: 20px; /* Adjusted spacing between nav items */
+    gap: 20px; 
 }
 
 .nav-item {
     color: white;
     text-decoration: none;
     font-weight: 500;
-    padding: 0.5rem 1rem; /* Increased padding for better spacing */
+    padding: 0.5rem 1rem; 
     border-radius: 5px;
     transition: background-color 0.3s;
 }
