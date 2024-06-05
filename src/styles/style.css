@@ -17,6 +17,8 @@ header{
     min-height: 100px;
 }
 
+
+
 ul{
    float: right;
    list-style-type: none;
@@ -308,4 +310,3 @@ footer {
     margin: 0;
     font-size: 14px; /* reduce font size */
   }
-  
