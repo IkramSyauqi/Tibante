@@ -6,14 +6,23 @@ body {
 
 header {
     background-color: #579C62;
-    padding: 15px;
+    padding: 15px 20px; /* Adjust the padding */
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000; /* Ensures header is on top of other elements */
+    box-sizing: border-box; /* Ensure padding is included in the width */
 }
 
 header .logo img {
     height: 60px;
+}
+
+header nav {
+    margin-right: 20px; /* Add some margin to the right */
 }
 
 header nav ul {
@@ -24,25 +33,21 @@ header nav ul {
     gap: 20px;
 }
 
-header nav ul li {
-    margin-right: 20px;
-}
-
 header nav ul li a {
     color: white;
     text-decoration: none;
-    font-weight: 500;
+    font-weight: bold;
     padding: 0.5rem; 
     border-radius: 5px;
     transition: background-color 0.3s;
 }
 
-.nav-item :hover{
+.nav-item:hover {
     background-color: #486a4c;
 }
 
 main {
-    padding: 20px;
+    padding: 80px 20px 20px; /* Add top padding to avoid content being hidden behind the fixed header */
 }
 
 .about-us {

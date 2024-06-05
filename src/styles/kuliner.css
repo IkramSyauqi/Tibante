@@ -14,7 +14,13 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: -webkit-sticky; /* For Safari */
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Ensure it stays on top of other content */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+
 
 .logo {
     height: 60px;
@@ -85,7 +91,7 @@ main {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap; /* Ensure proper wrapping on smaller screens */
+    flex-wrap: wrap; 
 }
 
 .dish-img {
@@ -217,7 +223,7 @@ main {
 
     nav {
         flex-direction: column;
-        gap: 10px; /* Adjusted gap for better spacing on small screens */
+        gap: 10px; 
     }
 
     .nav-item {
@@ -239,7 +245,7 @@ main {
     }
 
     .introkuliner {
-        width: 80%; /* Adjusted width for better responsiveness */
+        width: 80%; 
         height: auto;
     }
 }
