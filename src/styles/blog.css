@@ -127,8 +127,9 @@ nav {
 
 
 .read-more {
-    background-color: #4CAF50;
-    color: white;
+    background-color: #97BFFB;
+    color: black;
+    font-style:oblique;
     padding: 10px 20px;
     border-radius: 5px;
     text-decoration: none;
