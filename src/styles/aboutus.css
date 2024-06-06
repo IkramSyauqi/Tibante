@@ -6,15 +6,15 @@ body {
 
 header {
     background-color: #579C62;
-    padding: 15px 20px; /* Adjust the padding */
+    padding: 15px 20px; 
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: fixed;
     width: 100%;
     top: 0;
-    z-index: 1000; /* Ensures header is on top of other elements */
-    box-sizing: border-box; /* Ensure padding is included in the width */
+    z-index: 1000; 
+    box-sizing: border-box; 
 }
 
 header .logo img {
@@ -157,7 +157,7 @@ footer .footer-content div {
 }
 
 footer .footer-logo img {
-    height: 50px;
+    height: 70px;
 }
 
 footer .footer-nav ul {
@@ -191,7 +191,8 @@ footer .footer-logo {
 }
 
 footer .footer-logo p {
-    margin: 0;
+    margin: 0 auto;
+    padding-left: 30px;
 }
 
 footer .footer-content h3 {
