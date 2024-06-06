@@ -65,7 +65,8 @@ main{
 }
 
 main img{
-    width: 800px;
+    width: 600px;
+    border-radius: 10px;
 }
 
 .img{
@@ -75,9 +76,14 @@ main img{
 .container{
     background-color: #BAE0AD;
     padding: 30px;
-    width: 1000px;
+    width: 1200px;
     align-self: center;
+    border-radius: 10px;
 
+}
+.container p{
+    text-align: justify;
+    font-size: 15px;
 }
 
 /*-------*/
