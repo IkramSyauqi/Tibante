@@ -80,9 +80,9 @@ nav {
 .card {
     background-color: #BAE0AD;
     border-radius: 10px;
-    padding: 20px;
+    padding: 25px;
     width: 300px;
-    width: 70%; /* Ensure cards take full width of grid column */
+    width: 60%; /* Ensure cards take full width of grid column */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
@@ -114,14 +114,14 @@ nav {
     background-color: #fff;
     padding: 20px;
     border-radius: 5px;
-    font-size: 16px; /* Consistent font size */
+    font-size: 10px; /* Consistent font size */
     line-height: 1.5;
     margin-bottom: 20px;
     text-align: justify;
     overflow: hidden; /* Ensure text does not overflow */
     text-overflow: ellipsis; /* Add ellipsis for overflowing text */
     display: -webkit-box; /* Ensure compatibility with WebKit browsers */
-    -webkit-line-clamp: 5; /* Limit the text to 3 lines */
+    -webkit-line-clamp: 6; /* Limit the text to 3 lines */
     -webkit-box-orient: vertical;
 }
 
@@ -137,7 +137,7 @@ nav {
 }
 
 .read-more:hover {
-    background-color: #45a049;
+    background-color: #146ef5;
 }
 
 
