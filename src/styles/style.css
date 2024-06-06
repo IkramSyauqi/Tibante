@@ -365,13 +365,54 @@ ul li:active a{
 }
 
 footer {
-    background-color: #333;
-    color: #fff;
+    background-color: #579C62;
+    padding: 20px 0;
     text-align: center;
-    padding: 10px 0;
+}
+
+.footer-container {
+    max-width: 1000px;
+    margin: auto;
 }
 
 .footer-content {
-    max-width: 1200px;
-    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
+
+.footer-logo {
+    margin-right: 20px;
+}
+
+.footer-logo img {
+    width: 300px;
+    height: auto;
+}
+
+.footer-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-nav li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.footer-nav a {
+    text-decoration: none;
+    color: #fff; /* Mengubah warna teks menjadi putih */
+    font-size: 14px; /* Mengurangi ukuran font */
+}
+
+.footer-contact {
+    margin-right: 20px;
+}
+
+.footer-copyright {
+    margin-bottom: 0;
+}
+
+  
