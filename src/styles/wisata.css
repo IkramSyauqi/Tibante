@@ -64,6 +64,63 @@ main img{
     align-self: center;
 
 }
+
+.faq {
+    background-color: #E7F4E4;
+    padding: 2rem;
+    border-radius: 8px;
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+    margin: 20px auto;  
+    max-width: 1000px;  
+    align-items: center;
+}
+
+.faq h2 {
+    color: #579C62;
+    margin-bottom: 1rem;
+    font-size: 2rem; /* Increased font size */
+}
+
+.faq article {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    flex: 1;
+}
+
+.faq article h3 {
+    color: #333;
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem; /* Increased font size */
+}
+
+.faq article p {
+    color: #666;
+    font-size: 1.125rem; /* Increased font size */
+}
+
+.faq .info-box {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+}
+
+.faq .info-box h3 {
+    color: #333;
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem; /* Increased font size */
+}
+
+.faq .info-box p {
+    color: #666;
+    margin-bottom: 1rem;
+    font-size: 1.125rem; /* Increased font size */
+}
 /* ============================================ */
 footer {
     background-color: #579C62;
