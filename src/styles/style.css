@@ -268,15 +268,15 @@ ul li:active a{
     display: flex;
     gap: 2rem;
     justify-content: space-between;
-    margin: 20px;
-    max-width: 1000px;
+    margin: 20px auto;  
+    max-width: 1000px;  
     align-items: center;
-    margin-left: 418px;
 }
 
 .faq h2 {
     color: #579C62;
     margin-bottom: 1rem;
+    font-size: 2rem; /* Increased font size */
 }
 
 .faq article {
@@ -290,10 +290,12 @@ ul li:active a{
 .faq article h3 {
     color: #333;
     margin-bottom: 0.5rem;
+    font-size: 1.5rem; /* Increased font size */
 }
 
 .faq article p {
     color: #666;
+    font-size: 1.125rem; /* Increased font size */
 }
 
 .faq .info-box {
@@ -307,9 +309,11 @@ ul li:active a{
 .faq .info-box h3 {
     color: #333;
     margin-bottom: 0.5rem;
+    font-size: 1.5rem; /* Increased font size */
 }
 
 .faq .info-box p {
     color: #666;
     margin-bottom: 1rem;
+    font-size: 1.125rem; /* Increased font size */
 }
