@@ -300,7 +300,7 @@ a.btn:hover {
 .faq h2 {
     color: #579C62;
     margin-bottom: 1rem;
-    font-size: 2rem; /* Increased font size */
+    font-size: 2rem; 
 }
 
 .faq article {
@@ -314,12 +314,12 @@ a.btn:hover {
 .faq article h3 {
     color: #333;
     margin-bottom: 0.5rem;
-    font-size: 1.5rem; /* Increased font size */
+    font-size: 1.5rem; 
 }
 
 .faq article p {
     color: #666;
-    font-size: 1.125rem; /* Increased font size */
+    font-size: 1.125rem; 
 }
 
 .faq .info-box {
@@ -357,7 +357,7 @@ a.btn:hover {
     display: flex;
     justify-content: center;
     gap: 20px;
-    flex-wrap: wrap; /* Adjust for responsiveness */
+    flex-wrap: wrap; 
     max-width: 1000px;
     margin: auto;
 }
@@ -365,36 +365,36 @@ a.btn:hover {
 .comment-card {
     background-color: #BAE0AD;
     border-radius: 10px;
-    padding: 20px; /* Reduced padding */
-    width: 250px; /* Adjusted width for better layout */
+    padding: 20px; 
+    width: 250px; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 20px; /* Spacing between rows */
+    margin-bottom: 20px; 
 }
 
 .comment-name {
     background-color: #fff;
-    padding: 10px 20px; /* Adjusted padding */
+    padding: 10px 20px; 
     border-radius: 5px;
-    margin-bottom: 10px; /* Reduced margin */
-    width: auto; /* Adjusted width */
+    margin-bottom: 10px; 
+    width: auto;
     text-align: center;
     font-weight: bold;
-    font-size: 16px; /* Adjusted font size */
-    color: #333; /* Text color */
+    font-size: 16px; 
+    color: #333; 
 }
 
 .comment-text {
     background-color: #fff;
-    padding: 15px; /* Adjusted padding */
+    padding: 15px; 
     border-radius: 5px;
-    width: 100%; /* Full width */
+    width: 100%; 
     text-align: center;
-    font-size: 14px; /* Adjusted font size */
-    color: #666; /* Text color */
-    line-height: 1.4; /* Line height for better readability */
+    font-size: 14px; 
+    color: #666; 
+    line-height: 1.4; 
 }
 
 footer {
