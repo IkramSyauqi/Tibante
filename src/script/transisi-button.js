@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function() {
         var targetPosition = target.getBoundingClientRect().top;
         var startPosition = window.pageYOffset || window.scrollY;
         var distance = targetPosition - startPosition;
-        var duration = 850;
+        var duration = 450;
         var start = null;
 
         window.requestAnimationFrame(step);

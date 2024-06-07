@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Inter', sans-serif;
     margin: 0;
@@ -5,7 +9,7 @@ body {
 }
 
 header {
-    background-color: #28a745;
+    background-color: #579C62;
     padding: 20px 0;
     background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../images/home.jpg"); 
     background-size: cover;
@@ -24,41 +28,51 @@ header {
 }
 
 .logo {
-    margin-right: 500px;
-    margin-left: 40px;
+    margin-right: 550px;
+    
 }
 
 .logo img {
     width: 150px;
-    height: auto;
+    height: 40px;
 }
 
-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    gap: 20px;
+nav {
+	font-family: 'Inter', sans-serif;
+	font-weight: 500;
+    background-color: transparent;
 }
 
-nav li {
-    margin-right: 40px;
-    transition: box-shadow 0.3s ease, color 0.3s ease; 
+.navbar-scrolled {
+    background-color: #579C62 !important;
+    transition: background-color 0.5s;
 }
 
-nav li:hover {
-    box-shadow: 0px 2px 4px rgb(255, 255, 255); 
+.navbar-light .navbar-toggler {
+    border-color: #fff;
 }
 
-nav a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 18px;
-    transition: color 0.3s ease; /
+.navbar-brand {
+	font-size: x-large;
+	padding-left: 3rem;
 }
 
-nav a:hover {
-    color: white; 
+.navbar-nav {
+	font-size: large;
+}
+
+.nav-item {
+	line-height: 7px;
+	margin-right: 1rem;
+	cursor: pointer;
+}
+
+.navbar li a {
+    color: white;
+}
+
+.navbar li a:hover {
+    color: black;
 }
 
 .title{
@@ -77,17 +91,17 @@ nav a:hover {
 .title h2{
     color: white;
     font-size: 24px;
-    margin-top: -40px;
+    margin-top: 10px;
 }
 
 .button{
     position: absolute;
-    top: 65%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
-.btn{
+a.btn{
     border: 1px solid white;
     border-radius: 10px;
     padding: 5px 20px;
@@ -95,11 +109,18 @@ nav a:hover {
     transition: 0.5 ease;
     font-size: 18px;
     text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .btn:hover{
-    background-color: white;
-    color: black;
+    background-color: black;
+    color: white;
+}
+
+a.btn:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #579C62;
+    box-shadow: 0 0 10px 2px rgba(255, 255, 255, 0.8);
 }
 
 #content {
@@ -336,35 +357,44 @@ nav a:hover {
     display: flex;
     justify-content: center;
     gap: 20px;
+    flex-wrap: wrap; /* Adjust for responsiveness */
+    max-width: 1000px;
+    margin: auto;
 }
 
 .comment-card {
     background-color: #BAE0AD;
     border-radius: 10px;
-    padding: 60px;
-    width: 200px;
+    padding: 20px; /* Reduced padding */
+    width: 250px; /* Adjusted width for better layout */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 20px; /* Spacing between rows */
 }
 
 .comment-name {
     background-color: #fff;
-    padding: 5px 60px;
+    padding: 10px 20px; /* Adjusted padding */
     border-radius: 5px;
-    margin-bottom: 20px;
-    width: 100px;
+    margin-bottom: 10px; /* Reduced margin */
+    width: auto; /* Adjusted width */
     text-align: center;
     font-weight: bold;
+    font-size: 16px; /* Adjusted font size */
+    color: #333; /* Text color */
 }
 
 .comment-text {
     background-color: #fff;
-    padding: 60px 10px;
+    padding: 15px; /* Adjusted padding */
     border-radius: 5px;
-    width: 100%;
+    width: 100%; /* Full width */
     text-align: center;
+    font-size: 14px; /* Adjusted font size */
+    color: #666; /* Text color */
+    line-height: 1.4; /* Line height for better readability */
 }
 
 footer {

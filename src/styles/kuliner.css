@@ -7,41 +7,33 @@ body, html {
     line-height: 1.6;
 }
 
-header {
-    background-color: #579C62;
-    color: #fff;
-    padding: 1rem 2rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: -webkit-sticky; 
-    position: sticky;
-    top: 0;
-    z-index: 1000; 
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-
-.logo {
-    height: 60px;
-}
-
 nav {
-    display: flex;
-    gap: 20px; 
+	background-color: #579C62;
+	font-family: 'Inter', sans-serif;
+	font-weight: 200;
+}
+
+.navbar-brand {
+	font-size: large;
+	padding-left: 3rem;
+}
+
+.navbar-nav {
+	font-size: large;
 }
 
 .nav-item {
-    color: white;
-    text-decoration: none;
-    font-weight: 500;
-    padding: 0.5rem 1rem; 
-    border-radius: 5px;
-    transition: background-color 0.3s;
+	line-height: 7px;
+	margin-right: 0.8rem;
+	cursor: pointer;
 }
 
-.nav-item:hover {
-    background-color: #486a4c;
+.navbar li a {
+    color: white;
+}
+
+.navbar li a:hover {
+    color: black;
 }
 
 main {
@@ -55,6 +47,7 @@ main {
 
 .intro {
     text-align: center;
+    margin-top: 4em;
 }
 
 .intro h1 {
