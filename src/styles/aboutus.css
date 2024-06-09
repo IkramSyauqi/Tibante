@@ -87,6 +87,11 @@ main {
     margin-left: 100px; 
 }
 
+.team h2 {
+    text-align: center;
+    width: 100%;
+}
+
 .team .member {
     background-color: #f0f0f0;
     padding: 20px;
