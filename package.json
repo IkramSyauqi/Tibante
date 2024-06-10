@@ -4,7 +4,7 @@
   "description": "Project Capstone SIB Dicoding Cycle 6",
   "main": "index.js",
   "scripts": {
-    "start-dev": "node index.js"
+    "start-dev": "node ./src/index.js"
   },
   "keywords": [],
   "author": "",
