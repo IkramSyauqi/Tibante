@@ -1,0 +1,141 @@
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0 ;
+    background-color: #f4f4f4;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+.desa-wisata {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 50px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.desa-wisata h2 {
+    margin-top: 30px;
+    text-align: center;
+    font-weight: bold;
+}
+.desa-wisata p {
+    color: #555;
+    margin-bottom: 10px;
+    text-align: justify;
+}
+.desa-wisata img {
+    max-width: 70%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    margin-left: 10em;
+}
+.desa-wisata strong {
+    font-weight: bold;
+}
+
+nav {
+background-color: #579C62;
+font-family: 'Inter', sans-serif;
+font-weight: 500;
+}
+
+
+.navbar-brand {
+font-size: x-large;
+padding-left: 3rem;
+}
+
+.navbar-nav {
+font-size: large;
+}
+
+.nav-item {
+line-height: 7px;
+margin-right: 1rem;
+cursor: pointer;
+}
+
+.navbar li a {
+color: white;
+}
+
+.navbar li a:hover {
+color: black;
+}
+
+footer {
+background-color: #579C62;
+color: black;
+padding: 20px;
+text-align: center;
+}
+
+footer .footer-content {
+display: flex;
+justify-content: space-between;
+}
+
+footer .footer-content div {
+flex: 1;
+}
+
+footer .footer-logo img {
+height: 50px;
+}
+
+footer .footer-nav ul {
+list-style: none;
+padding: 0;
+}
+
+footer .footer-nav ul li {
+margin-bottom: 10px;
+}
+
+footer .footer-nav ul li a {
+color: black;
+text-decoration: none;
+}
+
+footer .footer-contact p {
+margin: 0;
+}
+
+footer .footer-contact {
+padding-left: 20px;
+}
+
+footer .footer-nav {
+padding-left: 20px;
+}
+
+footer .footer-logo {
+text-align: left;
+}
+
+footer .footer-logo p {
+margin: 0;
+}
+
+footer .footer-content h3 {
+margin-top: 0;
+}
+
+footer .footer-nav h3, .footer-contact h3 {
+margin-top: 0;
+}
+
+footer p {
+margin: 0;
+}
+
+footer .copyright {
+margin-top: 20px;
+}
+
+
+
