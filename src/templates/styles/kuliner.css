@@ -330,3 +330,86 @@ footer {
         font-size: 1rem;
     }
 }
+
+
+
+
+
+body .komentar {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.komentar .container {
+    width: 50%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.komentar h1, .komentar h2 {
+    text-align: center;
+    color: #333;
+}
+
+.komentar form {
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.komentar .form-group {
+    margin-bottom: 15px;
+}
+
+.komentar .form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.komentar .form-group input,
+.komentar .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.komentar button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background: #333;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.komentar button:hover {
+    background: #555;
+}
+
+.komentar #message {
+    text-align: center;
+    margin-bottom: 20px;
+    color: green;
+}
+
+.komentar #comments {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.komentar .comment {
+    margin-bottom: 15px;
+}
+
+.komentar .comment p {
+    margin: 5px 0;
+}
