@@ -10,13 +10,14 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <style>
         body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
+            font-family: 'Inter', sans-serif;
+            margin: 0 ;
             background-color: #f4f4f4;
         }
         .container {
             max-width: 1200px;
             margin: 0 auto;
+            margin-top: 100px;
         }
         .desa-wisata {
             background: #fff;
@@ -27,7 +28,9 @@
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
         .desa-wisata h2 {
-            margin-top: 70px;
+            margin-top: 30px;
+            text-align: center;
+            font-weight: bold;
         }
         .desa-wisata p {
             color: #555;
@@ -75,6 +78,78 @@
     color: black;
 }
 
+footer {
+    background-color: #579C62;
+    color: black;
+    padding: 20px;
+    text-align: center;
+}
+
+footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .footer-content div {
+    flex: 1;
+}
+
+footer .footer-logo img {
+    height: 50px;
+}
+
+footer .footer-nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer .footer-nav ul li {
+    margin-bottom: 10px;
+}
+
+footer .footer-nav ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+footer .footer-contact p {
+    margin: 0;
+}
+
+footer .footer-contact {
+    padding-left: 20px;
+}
+
+footer .footer-nav {
+    padding-left: 20px;
+}
+
+footer .footer-logo {
+    text-align: left;
+}
+
+footer .footer-logo p {
+    margin: 0;
+}
+
+footer .footer-content h3 {
+    margin-top: 0;
+}
+
+footer .footer-nav h3, .footer-contact h3 {
+    margin-top: 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer .copyright {
+    margin-top: 20px;
+}
+
+
+
     </style>
 </head>
 <body>
@@ -114,7 +189,7 @@
                         >
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link  border-bottom" href="./wisata.html" id="nav-dark1"
+                        <a class="nav-link" href="./wisata.html" id="nav-dark1"
                             >Wisata</a
                         >
                     </li>
@@ -128,7 +203,7 @@
                     </li>
                     <li class="nav-item">
                         <a
-                            class="nav-link"
+                            class="nav-link border-bottom"
                             href="./blog.html"
                             id="nav-dark3"
                             >Blog</a
@@ -148,6 +223,31 @@
     <div class="container">
         <div id="article-detail"></div>
     </div>
+
+    
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="https://yogasuprayitna.github.io/Data-Gambar-Tibante-2/logo%20tibante2.png" alt="TIBANTE Logo">
+                <p>TEMUKAN INDAHNYA BILEBANTE</p>
+            </div>
+            <div class="footer-nav">
+                <h3>FITUR</h3>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./wisata.html">Wisata</a></li>
+                    <li><a href="./kuliner.html">Kuliner</a></li>
+                    <li><a href="./blog.html">Blog</a></li>
+                    <li><a href="./aboutus.html">About Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3>Contact</h3>
+                <p>Bilebante, Pringgarata, Kabupaten Lombok Tengah, Nusa Tenggara Barat</p>
+            </div>
+        </div>
+    </footer>
+
 
     <script>
         document.addEventListener('DOMContentLoaded', function() {
