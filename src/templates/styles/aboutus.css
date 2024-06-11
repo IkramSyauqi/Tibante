@@ -111,6 +111,11 @@ main {
     border-radius: 5%;
 }
 
+.team .member .photoyoga img {
+    width: 260px;
+    height: 300px;
+}
+
 .team .member .info {
     text-align: left;
 }
