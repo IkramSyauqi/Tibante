@@ -1,13 +1,16 @@
 body {
     font-family: 'Inter', sans-serif;
-    margin: 0 ;
+    margin: 0;
     background-color: #f4f4f4;
 }
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
     margin-top: 100px;
+    padding: 0 15px; /* Added padding for smaller screens */
 }
+
 .desa-wisata {
     background: #fff;
     border: 1px solid #ddd;
@@ -16,126 +19,206 @@ body {
     margin-bottom: 50px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+
 .desa-wisata h2 {
     margin-top: 30px;
     text-align: center;
     font-weight: bold;
 }
+
 .desa-wisata p {
     color: #555;
     margin-bottom: 10px;
     text-align: justify;
 }
+
 .desa-wisata img {
     max-width: 70%;
     height: auto;
     border-radius: 5px;
     margin-bottom: 10px;
-    margin-left: 10em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
+
 .desa-wisata strong {
     font-weight: bold;
 }
 
 nav {
-background-color: #579C62;
-font-family: 'Inter', sans-serif;
-font-weight: 500;
+    background-color: #579C62;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
 }
 
-
 .navbar-brand {
-font-size: x-large;
-padding-left: 3rem;
+    font-size: x-large;
+    padding-left: 3rem;
 }
 
 .navbar-nav {
-font-size: large;
+    font-size: large;
 }
 
 .nav-item {
-line-height: 7px;
-margin-right: 1rem;
-cursor: pointer;
+    line-height: 7px;
+    margin-right: 1rem;
+    cursor: pointer;
 }
 
 .navbar li a {
-color: white;
+    color: white;
 }
 
 .navbar li a:hover {
-color: black;
+    color: black;
 }
 
 footer {
-background-color: #579C62;
-color: black;
-padding: 20px;
-text-align: center;
+    background-color: #579C62;
+    color: black;
+    padding: 20px;
+    text-align: center;
 }
 
 footer .footer-content {
-display: flex;
-justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Ensure wrapping for smaller screens */
 }
 
 footer .footer-content div {
-flex: 1;
+    flex: 1;
+    min-width: 250px; /* Minimum width to ensure columns stack */
+    padding: 10px; /* Padding for better spacing */
 }
 
 footer .footer-logo img {
-height: 50px;
+    height: 50px;
 }
 
 footer .footer-nav ul {
-list-style: none;
-padding: 0;
+    list-style: none;
+    padding: 0;
 }
 
 footer .footer-nav ul li {
-margin-bottom: 10px;
+    margin-bottom: 10px;
 }
 
 footer .footer-nav ul li a {
-color: black;
-text-decoration: none;
+    color: black;
+    text-decoration: none;
 }
 
 footer .footer-contact p {
-margin: 0;
+    margin: 0;
 }
 
 footer .footer-contact {
-padding-left: 20px;
+    padding-left: 20px;
 }
 
 footer .footer-nav {
-padding-left: 20px;
+    padding-left: 20px;
 }
 
 footer .footer-logo {
-text-align: left;
+    text-align: left;
 }
 
 footer .footer-logo p {
-margin: 0;
+    margin: 0;
 }
 
 footer .footer-content h3 {
-margin-top: 0;
+    margin-top: 0;
 }
 
-footer .footer-nav h3, .footer-contact h3 {
-margin-top: 0;
+footer .footer-nav h3,
+.footer-contact h3 {
+    margin-top: 0;
 }
 
 footer p {
-margin: 0;
+    margin: 0;
 }
 
 footer .copyright {
-margin-top: 20px;
+    margin-top: 20px;
+}
+
+/* Media Queries for Responsive Design */
+
+@media (max-width: 1200px) {
+    .container {
+        margin-top: 70px;
+    }
+}
+
+@media (max-width: 992px) {
+    .navbar-brand {
+        padding-left: 1rem;
+    }
+
+    .navbar-nav {
+        font-size: medium;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar-nav {
+        font-size: small;
+    }
+
+    .navbar li {
+        margin-right: 0.5rem;
+    }
+
+    .desa-wisata img {
+        max-width: 90%;
+        margin-left: 5%;
+    }
 }
 
 
+@media (max-width: 576px) {
+    .navbar-brand {
+        font-size: large;
+        padding-left: 0.5rem;
+    }
 
+    .desa-wisata {
+        padding: 15px;
+    }
+
+    .desa-wisata h2 {
+        font-size: 1.5rem;
+    }
+
+    .desa-wisata p {
+        font-size: 0.9rem;
+    }
+
+    .desa-wisata img {
+        max-width: 100%;
+        margin-left: 0;
+        align-items: center;
+    }
+
+    footer .footer-content {
+        flex-direction: column; /* Stack columns vertically */
+        align-items: center; /* Center align items */
+    }
+
+    footer .footer-content div {
+        text-align: center;
+    }
+
+    footer .footer-logo,
+    footer .footer-nav,
+    footer .footer-contact {
+        padding-left: 0;
+    }
+}
