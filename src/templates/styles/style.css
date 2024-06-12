@@ -580,3 +580,83 @@ body .komentar {
 .komentar .comment p {
     margin: 5px 0;
 }
+
+
+/* <--BELUM FIX--> */
+
+@media (max-width: 992px) {
+    .container {
+        padding: 0 15px;
+    }
+
+    .logo {
+        margin-right: 300px; /* Mengurangi margin kanan untuk logo */
+    }
+
+    header {
+        min-height: auto; /* Menghapus ketinggian minimum header */
+    }
+
+    .title {
+        top: 40%; /* Mengubah posisi judul pada header */
+    }
+
+    .button {
+        top: 55%; /* Mengubah posisi tombol pada header */
+    }
+
+    #content .container,
+    .faq {
+        max-width: 90%; /* Mengurangi lebar maksimum konten */
+        margin: 20px auto; /* Mengatur margin untuk konten */
+    }
+
+    .feature-container,
+    .comments-container {
+        flex-direction: column; /* Mengubah tata letak menjadi kolom */
+        align-items: center; /* Pusatkan konten */
+    }
+
+    .feature {
+        width: 100%; /* Mengatur lebar fitur ke 100% */
+    }
+
+    .footer-container {
+        padding: 0 20px; /* Mengurangi padding untuk footer-container */
+    }
+}
+
+@media (max-width: 576px) {
+    .logo {
+        margin-right: 100px; /* Mengurangi margin kanan untuk logo */
+    }
+
+    .title h1 {
+        font-size: 40px; /* Mengurangi ukuran font untuk judul */
+    }
+
+    .button {
+        top: 50%; /* Mengubah posisi tombol pada header */
+    }
+
+    .navbar-brand {
+        padding-left: 1rem; /* Mengurangi padding kiri untuk navbar-brand */
+    }
+
+    .nav-item {
+        margin-right: 0.5rem; /* Mengurangi margin kanan untuk setiap item navbar */
+    }
+
+    #content .container,
+    .faq {
+        padding: 15px; /* Mengurangi padding untuk konten */
+    }
+
+    .footer-logo img {
+        height: 40px; /* Mengurangi tinggi logo footer */
+    }
+
+    .footer-logo p {
+        font-size: 1rem; /* Mengurangi ukuran font untuk teks footer */
+    }
+}

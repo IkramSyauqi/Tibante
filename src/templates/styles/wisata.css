@@ -194,6 +194,7 @@ footer .footer-content div {
 
 footer .footer-logo img {
     height: 50px;
+    margin-left: 40px;
 }
 
 footer .footer-nav ul {
@@ -212,6 +213,12 @@ footer .footer-nav ul li a {
 
 footer .footer-contact p {
     margin: 0;
+}
+
+footer .footer-logo p {
+    font-weight: bold;
+    margin: 0;
+    margin-bottom: 100px;
 }
 
 footer .footer-contact {
@@ -359,4 +366,53 @@ body .komentar {
     font-size: 14px;
     color: #aaa;
     margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+    main img {
+        width: 100%; /* Gambar akan mengisi lebar penuh kontainer */
+    }
+
+    .container {
+        width: 90%; /* Mengurangi lebar kontainer agar lebih responsif */
+    }
+
+    .faq {
+        flex-direction: column; /* Mengubah tata letak FAQ menjadi kolom */
+        gap: 1rem; /* Mengurangi jarak antara elemen FAQ */
+        align-items: center; /* Pusatkan elemen FAQ */
+    }
+
+    .faq article,
+    .faq .info-box {
+        max-width: 100%; /* Mengatur lebar maksimum artikel FAQ */
+    }
+
+    footer .footer-content {
+        flex-direction: column; /* Mengubah tata letak menjadi kolom pada footer */
+        align-items: center; /* Pusatkan konten footer */
+    }
+
+    .komentar .container {
+        width: 90%; /* Mengurangi lebar kontainer untuk responsivitas */
+    }
+}
+
+/* Untuk layar dengan lebar maksimum 576px */
+@media only screen and (max-width: 576px) {
+    .navbar-brand {
+        padding-left: 1rem; /* Mengurangi padding pada navbar-brand */
+    }
+
+    .nav-item {
+        margin-right: 0.5rem; /* Mengurangi margin kanan pada setiap item navbar */
+    }
+
+    footer .footer-content {
+        padding: 0 10px; /* Mengurangi padding pada konten footer */
+    }
+
+    .komentar form {
+        padding: 20px; /* Mengurangi padding pada form komentar */
+    }
 }

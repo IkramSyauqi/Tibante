@@ -1,29 +1,29 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Inter', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 nav {
-	background-color: #579C62;
-	font-family: 'Inter', sans-serif;
-	font-weight: 500;
+    background-color: #579C62;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
 }
 
 .navbar-brand {
-	font-size: x-large;
-	padding-left: 3rem;
+    font-size: x-large;
+    padding-left: 3rem;
 }
 
 .navbar-nav {
-	font-size: large;
+    font-size: large;
 }
 
 .nav-item {
-	line-height: 7px;
-	margin-right: 1rem;
-	cursor: pointer;
+    line-height: 7px;
+    margin-right: 1rem;
+    cursor: pointer;
 }
 
 .navbar li a {
@@ -40,7 +40,6 @@ nav {
     align-items: center;
     padding: 0 20px;
 }
-
 
 .logo img {
     height: 50px;
@@ -65,10 +64,10 @@ nav {
 .cards-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 5px; /* Reduce the gap between cards */
+    gap: 5px;
     justify-items: center;
-    align-items: start; /* Ensure cards align at the top */
-    padding: 0 10px; /* Add padding to the container */
+    align-items: start;
+    padding: 0 10px;
 }
 
 .card {
@@ -76,7 +75,7 @@ nav {
     border-radius: 10px;
     padding: 25px;
     width: 300px;
-    width: 70%; /* Ensure cards take full width of grid column */
+    width: 70%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
@@ -108,22 +107,21 @@ nav {
     background-color: #fff;
     padding: 20px;
     border-radius: 5px;
-    font-size: 10px; /* Consistent font size */
+    font-size: 10px;
     line-height: 1.5;
     margin-bottom: 20px;
     text-align: justify;
-    overflow: hidden; /* Ensure text does not overflow */
-    text-overflow: ellipsis; /* Add ellipsis for overflowing text */
-    display: -webkit-box; /* Ensure compatibility with WebKit browsers */
-    -webkit-line-clamp: 6; /* Limit the text to 3 lines */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
     -webkit-box-orient: vertical;
 }
-
 
 .read-more {
     background-color: #97BFFB;
     color: black;
-    font-style:oblique;
+    font-style: oblique;
     padding: 10px 20px;
     border-radius: 5px;
     text-decoration: none;
@@ -134,8 +132,6 @@ nav {
     background-color: #146ef5;
 }
 
-
-/*---------*/
 #comments {
     text-align: center;
     padding: 50px 0;
@@ -151,7 +147,7 @@ nav {
     display: flex;
     justify-content: center;
     gap: 20px;
-    flex-wrap: wrap; /* Adjust for responsiveness */
+    flex-wrap: wrap;
     max-width: 1000px;
     margin: auto;
 }
@@ -159,45 +155,42 @@ nav {
 .comment-card {
     background-color: #BAE0AD;
     border-radius: 10px;
-    padding: 20px; /* Reduced padding */
-    width: 250px; /* Adjusted width for better layout */
+    padding: 20px;
+    width: 250px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 20px; /* Spacing between rows */
+    margin-bottom: 20px;
 }
 
 .comment-name {
     background-color: #fff;
-    padding: 10px 20px; /* Adjusted padding */
+    padding: 10px 20px;
     border-radius: 5px;
-    margin-bottom: 10px; /* Reduced margin */
-    width: auto; /* Adjusted width */
+    margin-bottom: 10px;
+    width: auto;
     text-align: center;
     font-weight: bold;
-    font-size: 16px; /* Adjusted font size */
-    color: #333; /* Text color */
+    font-size: 16px;
+    color: #333;
 }
 
 .comment-text {
     background-color: #fff;
-    padding: 15px; /* Adjusted padding */
+    padding: 15px;
     border-radius: 5px;
-    width: 100%; /* Full width */
+    width: 100%;
     text-align: center;
-    font-size: 14px; /* Adjusted font size */
-    color: #666; /* Text color */
-    line-height: 1.4; /* Line height for better readability */
+    font-size: 14px;
+    color: #666;
+    line-height: 1.4;
 }
-
-/*---------*/
 
 footer {
     background-color: #579C62;
     color: black;
     padding: 2rem 1rem;
-    
 }
 
 .footer-container {
@@ -217,6 +210,7 @@ footer {
 .footer-logo img {
     height: 60px;
     margin-bottom: 10px;
+    margin-left: 40px;
 }
 
 .footer-logo p {
@@ -257,7 +251,7 @@ footer {
 }
 
 .footer-contact {
-    margin-left: 40px; 
+    margin-left: 40px;
 }
 
 body .komentar {
@@ -373,4 +367,111 @@ body .komentar {
     font-size: 14px;
     color: #aaa;
     margin-bottom: 10px;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-menu, .footer-contact {
+        margin-right: 0;
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 992px) {
+    .navbar-brand {
+        font-size: large;
+        padding-left: 1rem;
+    }
+
+    .navbar-nav {
+        font-size: medium;
+    }
+
+    .cards-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .comment-card {
+        width: 45%;
+    }
+
+    .komentar .container {
+        width: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar-brand {
+        font-size: medium;
+        padding-left: 0.5rem;
+    }
+
+    .navbar-nav {
+        font-size: small;
+    }
+
+    .cards-container {
+        grid-template-columns: 1fr;
+    }
+
+    .comment-card {
+        width: 80%;
+    }
+
+    .komentar .container {
+        width: 90%;
+    }
+
+    .komentar form,
+    .komentar #comments,
+    .komentar .comment {
+        padding: 15px;
+    }
+
+    .komentar button {
+        padding: 12px;
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar-brand {
+        font-size: small;
+        padding-left: 0.5rem;
+    }
+
+    .navbar-nav {
+        font-size: x-small;
+    }
+
+    .cards-container {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .comment-card {
+        width: 100%;
+    }
+
+    .komentar .container {
+        width: 100%;
+    }
+
+    .komentar form,
+    .komentar #comments,
+    .komentar .comment {
+        padding: 10px;
+    }
+
+    .komentar button {
+        padding: 10px;
+    }
 }
