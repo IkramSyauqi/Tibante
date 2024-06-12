@@ -261,80 +261,116 @@ footer {
 }
 
 body .komentar {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    font-family: 'Inter', sans-serif;
+    background-color: #f9f9f9;
     margin: 0;
-    padding: 0;
+    padding: 20px 0;
 }
 
 .komentar .container {
-    width: 50%;
+    width: 60%;
     margin: auto;
     overflow: hidden;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
 .komentar h1, .komentar h2 {
     text-align: center;
     color: #333;
+    font-weight: 700;
+    margin-bottom: 20px;
 }
 
 .komentar form {
-    background: #fff;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background: #f4f4f4;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 .komentar .form-group {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 .komentar .form-group label {
     display: block;
-    margin-bottom: 5px;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #333;
 }
 
 .komentar .form-group input,
 .komentar .form-group textarea {
     width: 100%;
-    padding: 10px;
+    padding: 12px;
     border: 1px solid #ddd;
-    border-radius: 5px;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+.komentar .form-group input:focus,
+.komentar .form-group textarea:focus {
+    border-color: #579C62;
+    outline: none;
 }
 
 .komentar button {
     display: block;
     width: 100%;
-    padding: 10px;
+    padding: 15px;
     border: none;
-    background: #333;
+    background: #579C62;
     color: #fff;
-    border-radius: 5px;
+    border-radius: 8px;
+    font-size: 16px;
     cursor: pointer;
+    transition: background-color 0.3s;
 }
 
 .komentar button:hover {
-    background: #555;
+    background: #467a50;
 }
 
 .komentar #message {
     text-align: center;
     margin-bottom: 20px;
     color: green;
+    font-weight: 600;
 }
 
 .komentar #comments {
-    background: #fff;
+    background: #f4f4f4;
     padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 .komentar .comment {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
 }
 
 .komentar .comment p {
-    margin: 5px 0;
+    margin: 0 0 10px;
+    color: #333;
+    text-align: left;
+}
+
+.komentar .comment .author {
+    font-weight: 600;
+    color: #555;
+}
+
+.komentar .comment .date {
+    font-size: 14px;
+    color: #aaa;
+    margin-bottom: 10px;
 }

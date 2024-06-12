@@ -5,24 +5,24 @@ body {
 }
 
 nav {
-	background-color: #579C62;
-	font-family: 'Inter', sans-serif;
-	font-weight: 500;
+    background-color: #579C62;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
 }
 
 .navbar-brand {
-	font-size: x-large;
-	padding-left: 3rem;
+    font-size: x-large;
+    padding-left: 3rem;
 }
 
 .navbar-nav {
-	font-size: large;
+    font-size: large;
 }
 
 .nav-item {
-	line-height: 7px;
-	margin-right: 1rem;
-	cursor: pointer;
+    line-height: 7px;
+    margin-right: 1rem;
+    cursor: pointer;
 }
 
 .navbar li a {
@@ -34,7 +34,7 @@ nav {
 }
 
 main {
-    padding: 80px 20px 20px; 
+    padding: 80px 20px 20px;
 }
 
 .about-us {
@@ -82,9 +82,9 @@ main {
 .team {
     display: flex;
     flex-direction: column;
-    align-items: flex-start; 
+    align-items: flex-start;
     gap: 20px;
-    margin-left: 100px; 
+    margin-left: 100px;
 }
 
 .team h2 {
@@ -95,18 +95,18 @@ main {
 .team .member {
     background-color: #f0f0f0;
     padding: 20px;
-    width: 570px; 
+    width: 570px;
     border-radius: 10px;
     display: flex;
     align-items: center;
 }
 
 .team .member .photo {
-    margin-right: 10px; 
+    margin-right: 10px;
 }
 
 .team .member .photo img {
-    width: 250px; 
+    width: 250px;
     height: auto;
     border-radius: 5%;
 }
@@ -207,4 +207,88 @@ footer p {
 
 footer .copyright {
     margin-top: 20px;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .team {
+        margin-left: 50px;
+    }
+    .team .member {
+        width: 100%;
+    }
+}
+
+@media (max-width: 992px) {
+    .intro-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .about-us .intro {
+        flex: none;
+        width: 100%;
+    }
+    .about-us .logo-section {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+    .team {
+        margin-left: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar-brand {
+        padding-left: 1rem;
+    }
+    .nav-item {
+        margin-right: 0.5rem;
+    }
+    main {
+        padding: 60px 10px 10px;
+    }
+    .team {
+        margin-left: 10px;
+        align-items: center;
+    }
+    .team .member {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .team .member .info {
+        margin-top: 10px;
+        margin-left: 0;
+    }
+    .team .member button {
+        margin-left: 0;
+    }
+    footer .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+    footer .footer-contact,
+    footer .footer-nav {
+        padding-left: 0;
+        text-align: center;
+    }
+    footer .footer-logo p {
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar-brand {
+        font-size: large;
+    }
+    .nav-item {
+        font-size: medium;
+    }
+    .team .member .photo img {
+        width: 200px;
+    }
+    .team .member .photoyoga img {
+        width: 220px;
+        height: 260px;
+    }
 }
