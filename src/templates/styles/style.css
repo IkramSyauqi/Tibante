@@ -165,8 +165,9 @@ a.btn:hover {
 
 #content .text-content h2 {
     font-size: 24px;
-    margin-bottom: 10px;
-    padding-bottom: 40px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    /* padding-bottom: 10px; */
 }
 
 #content .text-content p {
@@ -174,7 +175,7 @@ a.btn:hover {
     line-height: 1.6;
     margin-bottom: 0;
     text-align: justify;
-    padding-top: -50px;
+    padding-bottom: 70px;
 }
 
 #content .image-content {
@@ -481,27 +482,6 @@ footer {
     margin-left: 40px; 
 }
 
-/* Responsive Footer for Smaller Screens */
-@media (max-width: 768px) {
-    .footer-container {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .footer-logo, .footer-menu, .footer-contact {
-        margin-bottom: 1rem;
-    }
-
-    .footer-logo img {
-        height: 50px;
-    }
-
-    .footer-logo p {
-        font-size: 1rem;
-    }
-}
-
-
 body .komentar {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
@@ -590,73 +570,148 @@ body .komentar {
     }
 
     .logo {
-        margin-right: 300px; /* Mengurangi margin kanan untuk logo */
+        margin-right: 300px; 
     }
 
     header {
-        min-height: auto; /* Menghapus ketinggian minimum header */
+        min-height: auto; 
     }
 
     .title {
-        top: 40%; /* Mengubah posisi judul pada header */
+        top: 40%; 
     }
 
     .button {
-        top: 55%; /* Mengubah posisi tombol pada header */
+        top: 55%; 
     }
 
     #content .container,
     .faq {
-        max-width: 90%; /* Mengurangi lebar maksimum konten */
-        margin: 20px auto; /* Mengatur margin untuk konten */
+        max-width: 90%; 
+        margin: 20px auto; 
     }
 
     .feature-container,
     .comments-container {
-        flex-direction: column; /* Mengubah tata letak menjadi kolom */
-        align-items: center; /* Pusatkan konten */
+        flex-direction: column; 
+        align-items: center; 
     }
 
     .feature {
-        width: 100%; /* Mengatur lebar fitur ke 100% */
+        width: 100%; 
     }
 
     .footer-container {
-        padding: 0 20px; /* Mengurangi padding untuk footer-container */
+        padding: 0 20px; 
     }
 }
 
 @media (max-width: 576px) {
     .logo {
-        margin-right: 100px; /* Mengurangi margin kanan untuk logo */
+        margin-right: 100px; 
     }
 
     .title h1 {
-        font-size: 40px; /* Mengurangi ukuran font untuk judul */
+        font-size: 40px; 
     }
 
     .button {
-        top: 50%; /* Mengubah posisi tombol pada header */
+        top: 50%; 
     }
 
     .navbar-brand {
-        padding-left: 1rem; /* Mengurangi padding kiri untuk navbar-brand */
+        padding-left: 1rem; 
     }
 
     .nav-item {
-        margin-right: 0.5rem; /* Mengurangi margin kanan untuk setiap item navbar */
+        margin-right: 0.5rem; 
     }
 
     #content .container,
     .faq {
-        padding: 15px; /* Mengurangi padding untuk konten */
+        padding: 15px; 
     }
 
     .footer-logo img {
-        height: 40px; /* Mengurangi tinggi logo footer */
+        height: 40px; 
     }
 
     .footer-logo p {
-        font-size: 1rem; /* Mengurangi ukuran font untuk teks footer */
+        font-size: 1rem; 
+    }
+}
+
+/* Responsive Footer for Smaller Screens */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-logo, .footer-menu, .footer-contact {
+        margin-bottom: 1rem;
+    }
+
+    .footer-logo img {
+        height: 50px;
+    }
+
+    .footer-logo p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 1200px) {
+    .title h1 {
+        font-size: 2rem;
+    }
+    
+    .title h2 {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .title {
+        padding: 0 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        min-height: 500px;
+    }
+
+    .title h1 {
+        font-size: 1.8rem;
+    }
+
+    .title h2 {
+        font-size: 0.9rem;
+    }
+
+    a.btn {
+        font-size: 0.9rem;
+        padding: 5px 15px;
+    }
+}
+
+@media (max-width: 576px) {
+    header {
+        min-height: 400px;
+    }
+
+    .title h1 {
+        font-size: 1.5rem;
+    }
+
+    .title h2 {
+        font-size: 0.8rem;
+    }
+
+    a.btn {
+        font-size: 0.8rem;
+        padding: 5px 10px;
+        margin: 0 auto;
     }
 }
