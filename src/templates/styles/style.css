@@ -32,7 +32,7 @@ header {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    min-height: 650px; 
+    min-height: 800px; 
     display: flex;
     flex-direction: column; 
     align-items: center;
@@ -565,6 +565,17 @@ body .komentar {
 /* <--BELUM FIX--> */
 
 @media (max-width: 992px) {
+    header {
+        min-height: auto;
+        padding: 100px 0; /* Adjust padding for smaller screens */
+    }
+    header .title {
+        top: 30%;
+    }
+    header .button {
+        top: 45%;
+    }
+    
     .container {
         padding: 0 15px;
     }
@@ -607,16 +618,27 @@ body .komentar {
 }
 
 @media (max-width: 576px) {
+    header {
+        background-size: 0 auto; /* Adjust background size for smaller screens */
+        min-height: 1000px;
+    }
+    
     .logo {
         margin-right: 100px; 
     }
 
     .title h1 {
         font-size: 40px; 
+        text-align: center;
+    }
+
+    .title h2 {
+        font-size: 20px;
+        text-align: center;
     }
 
     .button {
-        top: 50%; 
+        top: 50%;
     }
 
     .navbar-brand {
@@ -643,6 +665,10 @@ body .komentar {
 
 /* Responsive Footer for Smaller Screens */
 @media (max-width: 768px) {
+    header {
+        background-size: cover;
+    }
+    
     .footer-container {
         flex-direction: column;
         text-align: center;
