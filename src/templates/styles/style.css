@@ -32,7 +32,7 @@ header {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    min-height: 800px; 
+    min-height: 1200px; 
     display: flex;
     flex-direction: column; 
     align-items: center;
@@ -445,6 +445,7 @@ footer {
     margin: 0;
     font-size: 1.2rem;
     font-weight: bold;
+    margin-left: -40px;
 }
 
 .footer-menu, .footer-contact {
@@ -564,10 +565,11 @@ body .komentar {
 
 /* <--BELUM FIX--> */
 
-@media (max-width: 992px) {
+@media (max-width: 768px) {
     header {
-        min-height: auto;
+        min-height: 1200px;
         padding: 100px 0; /* Adjust padding for smaller screens */
+        background-size: 0 auto; /* Adjust background size for smaller screens */
     }
     header .title {
         top: 30%;
@@ -615,6 +617,7 @@ body .komentar {
     .footer-container {
         padding: 0 20px; 
     }
+    
 }
 
 @media (max-width: 576px) {
@@ -661,6 +664,57 @@ body .komentar {
     .footer-logo p {
         font-size: 1rem; 
     }
+
+    .footer-container {
+        align-items: center;
+    }
+
+    #content .container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    #content .text-content {
+        order: 2;
+        margin: 0;
+    }
+
+    #content .image-content {
+        order: 1;
+        margin-bottom: 20px;
+    }
+
+    #content .image-content img {
+        width: 100%; /* Make the image full width for smaller screens */
+        height: auto;
+        border-radius: 10px;
+    }
+
+    .profile-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    /* Responsive FAQ and Info Box */
+    .faq {
+        flex-direction: column;
+        align-items: center;
+        text-align: left;
+    }
+
+    .faq article,
+    .faq .info-box {
+        max-width: 100%; /* Ensure they take full width */
+        margin-bottom: 20px; /* Add some space between items */
+    }
+
+    .faq .info-box {
+        max-width: 300px; /* Optional: keep a max width for the info box */
+    }
+
+    
 }
 
 /* Responsive Footer for Smaller Screens */
@@ -686,4 +740,3 @@ body .komentar {
         font-size: 1rem;
     }
 }
-
