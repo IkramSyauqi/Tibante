@@ -390,8 +390,6 @@ body .komentar {
 }
 
 
-
-
 @media (max-width: 768px) {
     header {
         flex-direction: column;
@@ -439,7 +437,7 @@ body .komentar {
     }
 }
 
-/* Responsive Footer for Smaller Screens */
+
 @media (max-width: 768px) {
     .footer-container {
         flex-direction: column;
@@ -464,87 +462,87 @@ body .komentar {
 
 @media (max-width: 768px) {
     .intro {
-        margin-top: 2em; /* Mengurangi margin atas untuk bagian intro */
+        margin-top: 2em; 
     }
 
     .intro h1 {
-        font-size: 1.5rem; /* Mengurangi ukuran font untuk judul intro */
+        font-size: 1.5rem;
     }
 
     .introkuliner {
-        width: 80%; /* Mengurangi lebar gambar intro kuliner */
+        width: 80%; 
     }
 
     .flex-normal {
-        flex-direction: column; /* Mengubah tata letak menjadi kolom untuk flex-normal */
+        flex-direction: column; 
     }
 
     .flex-normal > div, .dish-description {
-        width: 100%; /* Mengatur lebar menjadi penuh untuk flex-normal dan dish-description */
-        margin-right: 0; /* Menghapus margin kanan */
-        margin-bottom: 20px; /* Menambah margin bawah */
+        width: 100%; 
+        margin-right: 0; 
+        margin-bottom: 20px; 
     }
 
     .dishes h2 {
-        margin-top: 0; /* Menghapus margin atas untuk judul dishes */
+        margin-top: 0; 
     }
 
     .dish-img {
-        width: 100%; /* Mengatur lebar gambar makanan menjadi penuh */
+        width: 100%; 
     }
 
     .faq {
-        flex-direction: column; /* Mengubah tata letak menjadi kolom untuk FAQ */
-        gap: 1.5rem; /* Menambah jarak antara artikel FAQ */
+        flex-direction: column; 
+        gap: 1.5rem; 
     }
 
     .faq article, .faq .info-box {
-        max-width: 100%; /* Mengatur lebar maksimum untuk artikel FAQ dan info-box */
+        max-width: 100%; 
     }
 
     footer .footer-container {
-        flex-direction: column; /* Mengubah tata letak menjadi kolom untuk footer */
-        align-items: center; /* Pusatkan konten footer */
-        text-align: center; /* Pusatkan teks footer */
+        flex-direction: column; 
+        align-items: center; 
+        text-align: center; 
     }
 
     .footer-logo, .footer-menu, .footer-contact {
-        margin-right: 0; /* Menghapus margin kanan */
+        margin-right: 0; 
     }
 
     .footer-logo img {
-        height: 40px; /* Mengurangi tinggi logo footer */
+        height: 40px; 
     }
 
     .footer-logo p {
-        font-size: 1rem; /* Mengurangi ukuran font untuk teks footer */
+        font-size: 1rem; 
     }
 }
 
 /* Aturan tambahan untuk ukuran layar yang lebih kecil dari 576px (misalnya ponsel) */
 @media (max-width: 576px) {
     .navbar-brand {
-        padding-left: 1rem; /* Mengurangi padding kiri untuk navbar-brand */
+        padding-left: 1rem; 
     }
 
     .nav-item {
-        margin-right: 0.5rem; /* Mengurangi margin kanan untuk setiap item navbar */
+        margin-right: 0.5rem; 
     }
 
     main {
-        padding: 10px; /* Mengurangi padding untuk main */
+        padding: 10px; 
     }
 
     .introkuliner {
-        width: 90%; /* Mengurangi lebar gambar intro kuliner */
+        width: 90%; 
     }
 
     .faq {
-        padding: 1rem; /* Mengurangi padding untuk FAQ */
-        margin: 10px; /* Mengurangi margin untuk FAQ */
+        padding: 1rem; 
+        margin: 10px; 
     }
 
     .footer-container {
-        padding: 0 10px; /* Mengurangi padding untuk footer-container */
+        padding: 0 10px;
     }
 }
