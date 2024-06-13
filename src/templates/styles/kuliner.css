@@ -555,6 +555,7 @@ body .komentar {
 
     .nav-item {
         margin-right: 0.5rem;
+        text-align: left;
     }
 
     main {

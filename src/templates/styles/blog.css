@@ -413,7 +413,7 @@ body .komentar {
     }
 
     .navbar-nav {
-        font-size: small;
+        font-size: medium;
     }
 
     .cards-container {
@@ -441,12 +441,12 @@ body .komentar {
 
 @media (max-width: 576px) {
     .navbar-brand {
-        font-size: small;
+        font-size: medium;
         padding-left: 0.5rem;
     }
 
     .navbar-nav {
-        font-size: x-small;
+        font-size: medium;
     }
 
     .cards-container {
