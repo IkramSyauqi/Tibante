@@ -8,24 +8,24 @@ body, html {
 }
 
 nav {
-	background-color: #579C62;
-	font-family: 'Inter', sans-serif;
-	font-weight: 200;
+    background-color: #579C62;
+    font-family: 'Inter', sans-serif;
+    font-weight: 200;
 }
 
 .navbar-brand {
-	font-size: large;
-	padding-left: 3rem;
+    font-size: large;
+    padding-left: 3rem;
 }
 
 .navbar-nav {
-	font-size: large;
+    font-size: large;
 }
 
 .nav-item {
-	line-height: 7px;
-	margin-right: 0.8rem;
-	cursor: pointer;
+    line-height: 7px;
+    margin-right: 0.8rem;
+    cursor: pointer;
 }
 
 .navbar li a {
@@ -154,7 +154,6 @@ main {
     margin-bottom: 1rem;
 }
 
-
 .umkm {
     margin-top: 5rem;
     margin-bottom: 5rem;
@@ -205,12 +204,10 @@ main {
     background-color: #e68a00;
 }
 
-
 footer {
     background-color: #579C62;
     color: black;
     padding: 2rem 1rem;
-    
 }
 
 .footer-container {
@@ -273,7 +270,6 @@ footer {
 .footer-contact {
     margin-left: 40px; 
 }
-
 
 body .komentar {
     font-family: 'Inter', sans-serif;
@@ -389,6 +385,78 @@ body .komentar {
     margin-bottom: 10px;
 }
 
+/* Media Queries for Smaller Screens */
+@media (max-width: 850px) {
+    .intro {
+        margin-top: 2em;
+    }
+
+    .intro h1 {
+        font-size: 1.5rem;
+    }
+
+    .introkuliner {
+        width: 80%;
+        height: auto;
+    }
+
+    .dishes {
+        margin: 0;
+    }
+
+    .dishes h2 {
+        margin-top: 0;
+    }
+
+    .dish-img {
+        width: 100%;
+    }
+
+    .dish-description {
+        margin-right: 0;
+        max-width: 100%;
+    }
+
+    .dish-description h2 {
+        margin-top: 0.5em; /* Jika diperlukan, sesuaikan margin-top di sini */
+    }
+
+    .faq {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .faq article,
+    .faq .info-box {
+        max-width: 100%;
+    }
+
+    footer .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-logo,
+    .footer-menu,
+    .footer-contact {
+        margin-right: 0;
+    }
+
+    .footer-logo img {
+        height: 40px;
+    }
+
+    .footer-logo p {
+        font-size: 1rem;
+    }
+
+    .komentar .container {
+        width: 90%;
+        padding: 10px;
+    }
+}
+
 
 @media (max-width: 768px) {
     header {
@@ -396,13 +464,15 @@ body .komentar {
         text-align: center;
     }
 
-    .logo {
-        margin-bottom: 10px;
+    .navbar-brand {
+        padding-left: 1rem;
+        text-align: center;
     }
 
     nav {
         flex-direction: column;
-        gap: 10px; 
+        gap: 10px;
+        text-align: center;
     }
 
     .nav-item {
@@ -414,55 +484,8 @@ body .komentar {
         padding: 10px;
     }
 
-    .intro h1 {
-        margin-top: 25px;
-    }
-
-    section {
-        padding: 10px;
-    }
-
-    section .dishes {
-        margin: 0;
-    }
-
-    .dish-img, .umkm-img {
-        max-width: 100%;
-        height: auto;
-    }
-
-    .introkuliner {
-        width: 80%; 
-        height: auto;
-    }
-}
-
-
-@media (max-width: 768px) {
-    .footer-container {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .footer-logo, .footer-menu, .footer-contact {
-        margin-bottom: 1rem;
-    }
-
-    .footer-logo img {
-        height: 50px;
-    }
-
-    .footer-logo p {
-        font-size: 1rem;
-    }
-}
-
-
-/* <--BELUM FIX--> */
-
-@media (max-width: 768px) {
     .intro {
-        margin-top: 2em; 
+        margin-top: 2em;
     }
 
     .intro h1 {
@@ -470,79 +493,102 @@ body .komentar {
     }
 
     .introkuliner {
-        width: 80%; 
+        width: 80%;
+        height: auto;
     }
 
-    .flex-normal {
-        flex-direction: column; 
-    }
-
-    .flex-normal > div, .dish-description {
-        width: 100%; 
-        margin-right: 0; 
-        margin-bottom: 20px; 
+    .dishes {
+        margin: 0;
     }
 
     .dishes h2 {
-        margin-top: 0; 
+        margin-top: 0;
     }
 
     .dish-img {
-        width: 100%; 
+        width: 100%;
+    }
+
+    .dish-description {
+        margin-right: 0;
+        max-width: 100%;
     }
 
     .faq {
-        flex-direction: column; 
-        gap: 1.5rem; 
+        flex-direction: column;
+        gap: 1.5rem;
     }
 
     .faq article, .faq .info-box {
-        max-width: 100%; 
+        max-width: 100%;
     }
 
     footer .footer-container {
-        flex-direction: column; 
-        align-items: center; 
-        text-align: center; 
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
 
     .footer-logo, .footer-menu, .footer-contact {
-        margin-right: 0; 
+        margin-right: 0;
     }
 
     .footer-logo img {
-        height: 40px; 
+        height: 40px;
     }
 
     .footer-logo p {
-        font-size: 1rem; 
+        font-size: 1rem;
+    }
+
+    .komentar .container {
+        width: 90%;
+        padding: 10px;
     }
 }
 
-/* Aturan tambahan untuk ukuran layar yang lebih kecil dari 576px (misalnya ponsel) */
+/* Media Queries for Very Small Screens */
 @media (max-width: 576px) {
     .navbar-brand {
-        padding-left: 1rem; 
+        padding-left: 1rem;
     }
 
     .nav-item {
-        margin-right: 0.5rem; 
+        margin-right: 0.5rem;
     }
 
     main {
-        padding: 10px; 
+        padding: 10px;
+    }
+
+    .intro h1 {
+        font-size: 1.2rem;
+        margin-top: 70px;
     }
 
     .introkuliner {
-        width: 90%; 
+        width: 90%;
     }
 
     .faq {
-        padding: 1rem; 
-        margin: 10px; 
+        padding: 1rem;
+        margin: 10px;
     }
 
     .footer-container {
         padding: 0 10px;
+    }
+
+    /* Ensure text within <p> elements occupies full width */
+    p {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        word-wrap: break-word;
+    }
+
+    .komentar .container {
+        width: 100%;
+        padding: 10px;
     }
 }
