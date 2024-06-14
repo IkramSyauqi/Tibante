@@ -383,6 +383,16 @@ body .komentar {
         align-items: center; 
     }
 
+    .footer-container{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-logo img{
+        margin-left: 33px;
+    }
+
+
     .komentar .container {
         width: 90%; 
     }
