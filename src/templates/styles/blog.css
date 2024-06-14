@@ -375,11 +375,26 @@ body .komentar {
         flex-direction: column;
         align-items: center;
         text-align: center;
+        font-size: medium;
     }
 
     .footer-menu, .footer-contact {
         margin-right: 0;
         margin-left: 0;
+    }
+
+    .footer-logo p{
+        font-size: medium;
+        margin-left: 20px;
+        padding-top: 0;
+    }
+
+    .footer-logo img{
+        margin-right: 25px;
+    }
+
+    .footer-menu h3{
+        padding-top: 10px;
     }
 }
 

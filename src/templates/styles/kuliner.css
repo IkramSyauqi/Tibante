@@ -4,13 +4,12 @@ body, html {
     font-family: 'Inter', sans-serif;
     background: #f4f4f4;
     color: #333;
-    line-height: 1.6;
 }
 
 nav {
     background-color: #579C62;
     font-family: 'Inter', sans-serif;
-    font-weight: 200;
+    font-weight: 400;
 }
 
 .navbar-brand {
@@ -20,11 +19,12 @@ nav {
 
 .navbar-nav {
     font-size: large;
+    position: relative;
 }
 
 .nav-item {
     line-height: 7px;
-    margin-right: 0.8rem;
+    margin-right: 0.85rem;
     cursor: pointer;
 }
 
@@ -431,25 +431,74 @@ body .komentar {
         max-width: 100%;
     }
 
-    footer .footer-container {
+    footer {
+        background-color: #579C62;
+        color: black;
+        padding: 2rem 1rem;
+        
+    }
+    
+    .footer-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    
+    .footer-logo {
+        display: flex;
         flex-direction: column;
-        align-items: center;
-        text-align: center;
+        align-items: flex-start;
     }
-
-    .footer-logo,
-    .footer-menu,
-    .footer-contact {
-        margin-right: 0;
-    }
-
+    
     .footer-logo img {
-        height: 40px;
+        height: 60px;
+        margin-bottom: 10px;
     }
-
+    
     .footer-logo p {
-        font-size: 1rem;
+        margin: 0;
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin-left: -40px;
     }
+    
+    .footer-menu, .footer-contact {
+        display: flex;
+        flex-direction: column;
+        margin-right: 40px;
+    }
+    
+    .footer-menu h3, .footer-contact h3 {
+        margin-bottom: 1rem;
+        font-size: 1.2rem;
+    }
+    
+    .footer-menu ul, .footer-contact ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .footer-menu li, .footer-contact li {
+        margin-bottom: 0.5rem;
+    }
+    
+    .footer-menu a, .footer-contact a {
+        color: black;
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+    
+    .footer-menu a:hover, .footer-contact a:hover {
+        color: #e0e0e0;
+    }
+    
+    .footer-contact {
+        margin-left: 40px; 
+    }
+    
 
     .komentar .container {
         width: 90%;
@@ -535,10 +584,17 @@ body .komentar {
 
     .footer-logo img {
         height: 40px;
+        margin-left: 4.7em;
+    }
+
+    .footer-menu{
+        padding-top: 5px;
+        margin-left: 40px;
     }
 
     .footer-logo p {
         font-size: 1rem;
+        margin-left: 20px;
     }
 
     .komentar .container {
