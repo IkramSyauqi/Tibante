@@ -273,6 +273,32 @@ footer {
     footer .footer-logo p {
         padding-left: 0;
     }
+    footer .footer-content {
+        flex-direction: column; 
+        align-items: center; 
+        text-align: center;
+    }
+
+    .footer-container{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-logo img {
+        margin-left: 4em;
+    }
+
+    .footer-logo p{
+        margin-left: 25px;
+    }
+
+    .footer-menu{
+        margin-left: 45px;
+    }
+
+    .footer-menu h3{
+        padding-top: 10px;
+    }
 }
 
 @media (max-width: 576px) {
@@ -288,5 +314,21 @@ footer {
     .team .member .photoyoga img {
         width: 220px;
         height: 260px;
+    }
+
+    footer .footer-content {
+        padding: 0 10px; 
+    }
+
+    .footer-logo img {
+        height: 40px; 
+    }
+
+    .footer-logo p {
+        font-size: 1rem; 
+    }
+
+    .footer-container {
+        align-items: center;
     }
 }

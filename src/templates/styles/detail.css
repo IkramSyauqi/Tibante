@@ -175,6 +175,33 @@ footer {
         max-width: 90%;
         margin-left: 5%;
     }
+
+    footer .footer-content {
+        flex-direction: column; 
+        align-items: center; 
+        text-align: center;
+    }
+
+    .footer-container{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-logo img {
+        margin-left: 4em;
+    }
+
+    .footer-logo p{
+        margin-left: 25px;
+    }
+
+    .footer-menu{
+        margin-left: 45px;
+    }
+
+    .footer-menu h3{
+        padding-top: 10px;
+    }
 }
 
 
@@ -215,5 +242,21 @@ footer {
     footer .footer-nav,
     footer .footer-contact {
         padding-left: 0;
+    }
+
+    footer .footer-content {
+        padding: 0 10px; 
+    }
+
+    .footer-logo img {
+        height: 40px; 
+    }
+
+    .footer-logo p {
+        font-size: 1rem; 
+    }
+
+    .footer-container {
+        align-items: center;
     }
 }
