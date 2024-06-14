@@ -381,6 +381,7 @@ body .komentar {
     footer .footer-content {
         flex-direction: column; 
         align-items: center; 
+        text-align: center;
     }
 
     .footer-container{
@@ -388,10 +389,21 @@ body .komentar {
         text-align: center;
     }
 
-    .footer-logo img{
-        margin-left: 33px;
+    .footer-logo img {
+        margin-left: 4em;
     }
 
+    .footer-logo p{
+        margin-left: 25px;
+    }
+
+    .footer-menu{
+        margin-left: 45px;
+    }
+
+    .footer-menu h3{
+        padding-top: 10px;
+    }
 
     .komentar .container {
         width: 90%; 
