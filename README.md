@@ -1,3 +1,6 @@
-Project Capstone SIB Dicoding Cycle 6
+Tutorial menggunakan website ini
 
-On Progress
+1. Gunakanlah perintah 'npm install' di terminal
+2. Setelah lakukan perintah 'npm run start-dev'
+3. Lalu klik 'localhost:3000'
+   
